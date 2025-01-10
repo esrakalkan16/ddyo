@@ -24,6 +24,7 @@ class AuthenticatedSessionController extends Controller
         $this->guard = $guard;
     }
 
+
     public function create(Request $request): LoginViewResponse
     {
         return app(LoginViewResponse::class);
